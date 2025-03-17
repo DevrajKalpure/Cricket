@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://someshthakreiplprediction.vercel.app/sitemap.xml
