@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPL Match Prediction</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title>IPL Prediction</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
@@ -16,20 +15,23 @@
         header {
             background-color: #007bff;
             color: white;
-            padding: 10px;
+            padding: 20px;
             font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav {
             background-color: #333;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         nav a {
-            float: left;
-            display: block;
             color: white;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            font-size: 16px;
         }
         nav a:hover {
             background-color: #575757;
@@ -87,19 +89,81 @@
         .match-details h3 {
             margin-top: 0;
         }
+        .team-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .team {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .team h2 {
+            color: #003366;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .team ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .team li {
+            padding: 5px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .team li span {
+            font-weight: 500;
+        }
+        .team-info {
+            background-color: #e9f7f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .team-info h4 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .team-list {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
     </style>
 </head>
-<body>
-    <header>IPL Match Prediction</header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#ipl-matches">IPL Matches</a>
-        <a href="ipl2025.html">IPL 2025 Squads</a>
 
-        <a href="#contact-us">Contact Us</a>
-        <a href="#terms">Terms and Conditions</a>
-        <a href="#privacy">Privacy</a>
+
+
+
+<body>
+    <nav>
+        <a href="index.html>Home"></a>
+        <a href="iplmatches.html">IPL Matches</a>
+        <a href="ipl2025.html">IPL 2025 Squads</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="Terms.html">Terms and Conditions</a>
     </nav>
+    <h1>Welcome to IPL Predictions</h1>
+
+
 
     <div class="container" id="home">
         <!-- Match Image -->
@@ -109,7 +173,7 @@
 
         <!-- Match Details -->
         <div class="match-details">
-            <h3>Match Details</h3>
+            <h3 >Match Details</h3>
             <p>
                 <strong>Toss:</strong> KKR won the toss and elected to bat first.<br>
                 <strong>Venue:</strong> Eden Gardens, Kolkata.<br>
@@ -121,25 +185,7 @@
             </p>
         </div>
         <div>
-            <h2>Both teams have been showing tremendous potential this season, but KKR's aggressive batting lineup might just give them the edge. With players like Shubman Gill and Andre Russell in prime form, they can turn the game around in no time. On the other hand, Bangalore has a strong bowling unit with Mohammed Siraj leading the charge, while their top-order batsmen, including Virat Kohli and Faf du Plessis, are in great shape. It’s going to be a nail-biting contest, and while Bangalore’s all-rounders provide some stability, KKR’s dynamic players could seize the opportunity with some explosive batting. The match promises to be a high-scoring thriller, but KKR might edge out slightly with their all-around game.</h2>
-        </div>
-
-        <!-- Random Prediction -->
-        <h2>Random Match Prediction</h2>
-        <p class="prediction" id="matchPrediction"></p>
-
-        <!-- Ad Space -->
-        <div class="ad-space">
-            <!-- AdSense Ad Unit -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            <p>Both teams have been showing tremendous potential this season, but KKR's aggressive batting lineup might just give them the edge. With players like Shubman Gill and Andre Russell in prime form, they can turn the game around in no time. On the other hand, Bangalore has a strong bowling unit with Mohammed Siraj leading the charge, while their top-order batsmen, including Virat Kohli and Faf du Plessis, are in great shape. It’s going to be a nail-biting contest, and while Bangalore’s all-rounders provide some stability, KKR’s dynamic players could seize the opportunity with some explosive batting. The match promises to be a high-scoring thriller, but KKR might edge out slightly with their all-around game.</p>
         </div>
 
         <!-- Player Stats -->
@@ -172,230 +218,158 @@
                 <tr><td>Tim David</td><td>Suyash Sharma</td><td>80</td><td>45</td><td>2</td><td>177.8</td><td>40.0</td></tr>
             </table>
         </div>
+
+        <!-- Random Prediction -->
+        <h2>Random Match Prediction</h2>
+        <p class="prediction" id="matchPrediction"></p>
+
+        <!-- Ad Space -->
+        <div class="ad-space">
+            <!-- AdSense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </div>
 
-    <div class="container" id="ipl-matches" style="display: none;">
-        <h2>IPL Matches</h2>
-        <p>Details about upcoming and past IPL matches will be displayed here.</p>
-    </div>
 
-    <div class="container" id="contact-us" style="display: none;">
-        <h2>Contact Us</h2>
-        <p>For any queries, please contact us at support@iplprediction.com.</p>
-    </div>
-
-    <div class="container" id="terms" style="display: none;">
-    <h2>Terms and Conditions</h2>
-    <p>Welcome to IPL Match Prediction! These terms and conditions outline the rules and regulations for the use of our website.</p>
-
-    <h3>1. Acceptance of Terms</h3>
-    <p>By accessing this website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website.</p>
-
-    <h3>2. Intellectual Property</h3>
-    <p>All content on this website, including text, images, graphics, and logos, is the property of IPL Match Prediction and is protected by copyright laws. Unauthorized use of any content is strictly prohibited.</p>
-
-    <h3>3. User Responsibilities</h3>
-    <p>You agree to use this website only for lawful purposes. You must not:</p>
-    <ul>
-        <li>Engage in any activity that disrupts or interferes with the website's functionality.</li>
-        <li>Attempt to gain unauthorized access to any part of the website.</li>
-        <li>Use the website to distribute harmful or malicious software.</li>
-    </ul>
-
-    <h3>4. Disclaimer</h3>
-    <p>The information provided on this website is for general informational purposes only. We do not guarantee the accuracy, completeness, or reliability of this information. Any reliance you place on such information is strictly at your own risk.</p>
-
-    <h3>5. Limitation of Liability</h3>
-    <p>IPL Match Prediction and its owners, employees, and affiliates will not be liable for any damages arising out of or in connection with the use of this website. This includes, but is not limited to, direct, indirect, incidental, or consequential damages.</p>
-
-    <h3>6. External Links</h3>
-    <p>Our website may contain links to external websites. We are not responsible for the content or practices of these external sites. The inclusion of any link does not imply endorsement by IPL Match Prediction.</p>
-
-    <h3>7. Changes to Terms</h3>
-    <p>We reserve the right to modify these Terms and Conditions at any time. Any changes will be posted on this page, and your continued use of the website constitutes acceptance of the updated terms.</p>
-
-    <h3>8. Governing Law</h3>
-    <p>These Terms and Conditions are governed by and construed in accordance with the laws of [Your Country/Region]. Any disputes arising from these terms will be subject to the exclusive jurisdiction of the courts in [Your Country/Region].</p>
-
-    <h3>9. Contact Us</h3>
-    <p>If you have any questions about these Terms and Conditions, please contact us at <a href="mailto:support@iplprediction.com">support@iplprediction.com</a>.</p>
-</div>
-
-    <div class="container" id="privacy" style="display: none;">
-    <h2>Privacy Policy</h2>
-    <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website.</p>
-    <p><strong>Information We Collect:</strong> We may collect your name, email address, and browsing behavior.</p>
-    <p><strong>How We Use Your Information:</strong> We use your information to improve our services and provide personalized content.</p>
-    <p><strong>Data Security:</strong> We take reasonable steps to protect your data from unauthorized access.</p>
-</div>
-
-    <script>
-        function getRandomPrediction() {
-            const predictions = [
-                "KKR will dominate today!",
-                "RCB's bowling attack is strong today!",
-                "Close contest expected with a thrilling finish!",
-                "Batsmen will rule the game today!",
-                "Expect a bowling masterclass from both teams!"
-            ];
-            return predictions[Math.floor(Math.random() * predictions.length)];
-        }
-        document.getElementById("matchPrediction").innerText = getRandomPrediction();
-
-        // Navigation functionality
-        const navLinks = document.querySelectorAll('nav a');
-        const sections = document.querySelectorAll('.container');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href').substring(1);
-                sections.forEach(section => {
-                    if (section.id === targetId) {
-                        section.style.display = 'block';
-                    } else {
-                        section.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Show home section by default
-        document.getElementById('home').style.display = 'block';
-    </script>
-
-
-
-
-
-
-<div class="container">
-    <h1>KKR vs RCB Dream11 Team Suggestions (2025)</h1>
-
-    <div class="table-container">
-        <h2>Dream11 Team Suggestions</h2>
-        <table>
-            <tr>
-                <th>Role</th>
-                <th>Player</th>
-                <th>Team</th>
-            </tr>
-            <tr>
-                <td>Captain (C)</td>
-                <td>Narine</td>
-                <td>KKR</td>
-            </tr>
-            <tr>
-                <td>Vice-Captain (VC)</td>
-                <td>Virat Kohli</td>
-                <td>RCB</td>
-            </tr>
-            <tr>
-                <td>Batsmen</td>
-                <td>Rajat patidar</td>
-                <td>RCB</td>
-            </tr>
-            <tr>
-                <td>Batsmen</td>
-                <td>Rinku Singh</td>
-                <td>KKR</td>
-            </tr>
-            <tr>
-                <td>Bowlers</td>
-                <td>Sunil Narine</td>
-                <td>KKR</td>
-            </tr>
-            <tr>
-                <td>Bowlers</td>
-                <td>Yash Dayal</td>
-                <td>RCB</td>
-            </tr>
-            <tr>
-                <td>All-Rounders</td>
-                <td>Andre Russell</td>
-                <td>KKR</td>
-            </tr>
-            <tr>
-                <td>All-Rounders</td>
-                <td>Livingston</td>
-                <td>RCB</td>
-            </tr>
-        </table>
-        <p class="disclaimer">Disclaimer: These are suggestions based on current form and match conditions. Please make your final decisions based on your analysis.</p>
-    </div>
-
-    <div class="team-section">
-        <h2>Random Dream11 Teams</h2>
-
-        <div class="team-table">
-            <p class="team-title">Team 1</p>
+    <div class="container">
+        <h1>KKR vs RCB Dream11 Team Suggestions (2025)</h1>
+    
+        <div class="table-container">
+            <h2>Dream11 Team Suggestions</h2>
             <table>
                 <tr>
                     <th>Role</th>
                     <th>Player</th>
+                    <th>Team</th>
                 </tr>
                 <tr>
                     <td>Captain (C)</td>
-                    <td>Virat Kohli</td>
+                    <td>Narine</td>
+                    <td>KKR</td>
                 </tr>
                 <tr>
                     <td>Vice-Captain (VC)</td>
+                    <td>Virat Kohli</td>
+                    <td>RCB</td>
+                </tr>
+                <tr>
+                    <td>Batsmen</td>
+                    <td>Rajat patidar</td>
+                    <td>RCB</td>
+                </tr>
+                <tr>
+                    <td>Batsmen</td>
+                    <td>Rinku Singh</td>
+                    <td>KKR</td>
+                </tr>
+                <tr>
+                    <td>Bowlers</td>
+                    <td>Sunil Narine</td>
+                    <td>KKR</td>
+                </tr>
+                <tr>
+                    <td>Bowlers</td>
+                    <td>Yash Dayal</td>
+                    <td>RCB</td>
+                </tr>
+                <tr>
+                    <td>All-Rounders</td>
                     <td>Andre Russell</td>
-                </tr>
-                <tr>
-                    <td>Wicket-Keeper</td>
-                    <td>Salt</td>
-                </tr>
-                <tr>
-                    <td>Batters</td>
-                    <td>Rinku Singh, Patidar</td>
+                    <td>KKR</td>
                 </tr>
                 <tr>
                     <td>All-Rounders</td>
-                    <td>Venkatesh Iyer, Livingston</td>
-                </tr>
-                <tr>
-                    <td>Bowlers</td>
-                    <td>Sunil Narine, Hazelwood</td>
+                    <td>Livingston</td>
+                    <td>RCB</td>
                 </tr>
             </table>
+            <p class="disclaimer">Disclaimer: These are suggestions based on current form and match conditions. Please make your final decisions based on your analysis.</p>
         </div>
-
-        <div class="team-table">
-            <p class="team-title">Team 2</p>
-            <table>
-                <tr>
-                    <th>Role</th>
-                    <th>Player</th>
-                </tr>
-                <tr>
-                    <td>Captain (C)</td>
-                    <td>Virat Kohli</td>
-                </tr>
-                <tr>
-                    <td>Vice-Captain (VC)</td>
-                    <td>Lockie Ferguson</td>
-                </tr>
-                <tr>
-                    <td>Wicket-Keeper</td>
-                    <td>Salt</td>
-                </tr>
-                <tr>
-                    <td>Batters</td>
-                    <td>Rajat Patidar, A Rahane</td>
-                </tr>
-                <tr>
-                    <td>All-Rounders</td>
-                    <td>Liam Livingstone, Andre Russell</td>
-                </tr>
-                <tr>
-                    <td>Bowlers</td>
-                    <td>Harshit rana,Yash Dayal</td>
-                </tr>
-            </table>
+    
+        <div class="team-section">
+            <h2>Random Dream11 Teams</h2>
+    
+            <div class="team-table">
+                <p class="team-title">Team 1</p>
+                <table>
+                    <tr>
+                        <th>Role</th>
+                        <th>Player</th>
+                    </tr>
+                    <tr>
+                        <td>Captain (C)</td>
+                        <td>Virat Kohli</td>
+                    </tr>
+                    <tr>
+                        <td>Vice-Captain (VC)</td>
+                        <td>Andre Russell</td>
+                    </tr>
+                    <tr>
+                        <td>Wicket-Keeper</td>
+                        <td>Salt</td>
+                    </tr>
+                    <tr>
+                        <td>Batters</td>
+                        <td>Rinku Singh, Patidar</td>
+                    </tr>
+                    <tr>
+                        <td>All-Rounders</td>
+                        <td>Venkatesh Iyer, Livingston</td>
+                    </tr>
+                    <tr>
+                        <td>Bowlers</td>
+                        <td>Sunil Narine, Hazelwood</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="team-table">
+                <p class="team-title">Team 2</p>
+                <table>
+                    <tr>
+                        <th>Role</th>
+                        <th>Player</th>
+                    </tr>
+                    <tr>
+                        <td>Captain (C)</td>
+                        <td>Virat Kohli</td>
+                    </tr>
+                    <tr>
+                        <td>Vice-Captain (VC)</td>
+                        <td>Lockie Ferguson</td>
+                    </tr>
+                    <tr>
+                        <td>Wicket-Keeper</td>
+                        <td>Salt</td>
+                    </tr>
+                    <tr>
+                        <td>Batters</td>
+                        <td>Rajat Patidar, A Rahane</td>
+                    </tr>
+                    <tr>
+                        <td>All-Rounders</td>
+                        <td>Liam Livingstone, Andre Russell</td>
+                    </tr>
+                    <tr>
+                        <td>Bowlers</td>
+                        <td>Harshit rana,Yash Dayal</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-</div>
+
+
+
+
 
 
 
