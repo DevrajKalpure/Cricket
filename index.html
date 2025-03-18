@@ -21,9 +21,18 @@
 
     <style>
 
+
+  .ad-container {
+    text-align: center;
+    margin: 20px 0;
+}
 .adsbygoogle:empty {
-    display: none;
-  }
+    display: none !important;
+    height: 0px !important;
+    min-height: 0 !important;
+}
+
+
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -185,17 +194,24 @@
 <p>Get the latest IPL match stats, Dream11 team predictions, and fantasy cricket insights to win your leagues!</p>
 
 
-<!-- AdSense Ad Unit -->
-<div class="ad-space">
+<div id="ad-container">
     <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4816249160383573"
-    data-ad-slot="7190232483"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        style="display:block"
+        data-ad-client="ca-pub-4816249160383573"
+        data-ad-slot="7190232483"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        setTimeout(() => {
+            let ad = document.querySelector(".adsbygoogle");
+            if (ad && ad.innerHTML.trim() === "") {
+                document.getElementById("ad-container").style.display = "none";
+            }
+        }, 3000);
+    </script>
+</div>
+
 
 
 <section id="faq" style="display: none;">
@@ -225,17 +241,24 @@
         </div>
 
 
-        <!-- AdSense Ad Unit -->
-<div class="ad-space">
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4816249160383573"
-     data-ad-slot="7190232483"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <div id="ad-container">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4816249160383573"
+                data-ad-slot="7190232483"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                setTimeout(() => {
+                    let ad = document.querySelector(".adsbygoogle");
+                    if (ad && ad.innerHTML.trim() === "") {
+                        document.getElementById("ad-container").style.display = "none";
+                    }
+                }, 3000);
+            </script>
+        </div>
+        
 
 </div>
 
@@ -256,17 +279,24 @@
             <p>Both teams have been showing tremendous potential this season, but KKR's aggressive batting lineup might just give them the edge. With players like Shubman Gill and Andre Russell in prime form, they can turn the game around in no time. On the other hand, Bangalore has a strong bowling unit with Mohammed Siraj leading the charge, while their top-order batsmen, including Virat Kohli and Faf du Plessis, are in great shape. It’s going to be a nail-biting contest, and while Bangalore’s all-rounders provide some stability, KKR’s dynamic players could seize the opportunity with some explosive batting. The match promises to be a high-scoring thriller, but KKR might edge out slightly with their all-around game.</p>
         </div>
 
-        <!-- AdSense Ad Unit -->
-<div class="ad-space">
-    <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4816249160383573"
-    data-ad-slot="7190232483"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <div id="ad-container">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4816249160383573"
+                data-ad-slot="7190232483"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                setTimeout(() => {
+                    let ad = document.querySelector(".adsbygoogle");
+                    if (ad && ad.innerHTML.trim() === "") {
+                        document.getElementById("ad-container").style.display = "none";
+                    }
+                }, 3000);
+            </script>
+        </div>
+        
 
 </div>
 
@@ -299,18 +329,24 @@
                 <tr><td>Krunal Pandya</td><td>Harshit Rana</td><td>25</td><td>20</td><td>0</td><td>125.0</td><td>-</td></tr>
                 <tr><td>Tim David</td><td>Suyash Sharma</td><td>80</td><td>45</td><td>2</td><td>177.8</td><td>40.0</td></tr>
             </table>
-        </div>
-        <!-- AdSense Ad Unit -->
-<div class="ad-space">
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4816249160383573"
-     data-ad-slot="7190232483"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+            <div id="ad-container">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-4816249160383573"
+                    data-ad-slot="7190232483"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    setTimeout(() => {
+                        let ad = document.querySelector(".adsbygoogle");
+                        if (ad && ad.innerHTML.trim() === "") {
+                            document.getElementById("ad-container").style.display = "none";
+                        }
+                    }, 3000);
+                </script>
+            </div>
+            
 
 </div>
 
@@ -320,19 +356,24 @@
         <p class="prediction" id="matchPrediction"></p>
 
         <!-- Ad Space -->
-        <!-- AdSense Ad Unit -->
-<div class="ad-space">
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4816249160383573"
-     data-ad-slot="7190232483"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-</div>
+        <div id="ad-container">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4816249160383573"
+                data-ad-slot="7190232483"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                setTimeout(() => {
+                    let ad = document.querySelector(".adsbygoogle");
+                    if (ad && ad.innerHTML.trim() === "") {
+                        document.getElementById("ad-container").style.display = "none";
+                    }
+                }, 3000);
+            </script>
+        </div>
+        
 
 <!-- Match Image -->
 <div class="image-section">
@@ -395,17 +436,24 @@
                 </tr>
             </table>
 
-            <!-- AdSense Ad Unit -->
-<div class="ad-space">
-    <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4816249160383573"
-     data-ad-slot="7190232483"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+            <div id="ad-container">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-4816249160383573"
+                    data-ad-slot="7190232483"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    setTimeout(() => {
+                        let ad = document.querySelector(".adsbygoogle");
+                        if (ad && ad.innerHTML.trim() === "") {
+                            document.getElementById("ad-container").style.display = "none";
+                        }
+                    }, 3000);
+                </script>
+            </div>
+            
 
 </div>
 
@@ -490,7 +538,24 @@
 
 
 
-
+    <div id="ad-container">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4816249160383573"
+            data-ad-slot="7190232483"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            setTimeout(() => {
+                let ad = document.querySelector(".adsbygoogle");
+                if (ad && ad.innerHTML.trim() === "") {
+                    document.getElementById("ad-container").style.display = "none";
+                }
+            }, 3000);
+        </script>
+    </div>
+    
 
 
 
@@ -508,6 +573,25 @@
             <div class="image-section">
                 <img src="../images/image.png">
             </div>
+
+            <div id="ad-container">
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-4816249160383573"
+                    data-ad-slot="7190232483"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    setTimeout(() => {
+                        let ad = document.querySelector(".adsbygoogle");
+                        if (ad && ad.innerHTML.trim() === "") {
+                            document.getElementById("ad-container").style.display = "none";
+                        }
+                    }, 3000);
+                </script>
+            </div>
+            
         </div>
         <div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; background: white; width: 90%; max-width: 300px;">
           <h2>Team 2</h2>
