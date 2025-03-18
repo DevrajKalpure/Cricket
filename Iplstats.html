@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player vs Bowler Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 12px 20px;
+            color: white;
+        }
+        
+        .menu-toggle {
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                background-color: #007bff;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+        }
+        
+        .container {
+            max-width: 95%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        
+        th, td {
+            padding: 12px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f4b41a;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        @media (max-width: 600px) {
+            table, th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div><a href="index.html" style="color: white;">Home</a></div>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ipl2025.html">IPL 2025 Squads</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="Terms.html">Terms & Conditions</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Bowler Stats Against Virat Kohli</h2>
+        <table>
+            <tr>
+                <th>Bowler</th><th>Matches</th><th>Dismissals</th><th>Runs</th><th>Average</th><th>Economy</th>
+            </tr>
+            <tr><td>Andre Russell</td><td>15</td><td>2</td><td>123</td><td>61.5</td><td>10.53</td></tr>
+            <tr><td>Sunil Narine</td><td>20</td><td>4</td><td>156</td><td>39</td><td>6.98</td></tr>
+        </table>
+    </div>
+    <div class="container">
+
+        <h2>Bowler Stats Against Rajat Patidar</h2>
+        <table>
+            <tr>
+                <th>Bowler</th><th>Matches</th><th>Dismissals</th><th>Runs</th><th>Average</th><th>Economy</th>
+            </tr>
+            <tr><td>Andre Russell</td><td>3</td><td>1</td><td>34</td><td>34</td><td>9.71</td></tr>
+            <tr><td>Sunil Narine</td><td>4</td><td>2</td><td>51</td><td>25.5</td><td>6.38</td></tr>
+            <tr><td>Varun Chakravarthy</td><td>2</td><td>1</td><td>27</td><td>27</td><td>8.18</td></tr>
+            <tr><td>Harshit Rana</td><td>1</td><td>0</td><td>15</td><td>-</td><td>10.5</td></tr>
+        </table>
+    </div>
+    <div class="container">
+
+        <h2>Bowler Stats Against Devdutt Padikkal</h2>
+        <table>
+            <tr>
+                <th>Bowler</th><th>Matches</th><th>Dismissals</th><th>Runs</th><th>Average</th><th>Economy</th>
+            </tr>
+            <tr><td>Andre Russell</td><td>2</td><td>1</td><td>21</td><td>21</td><td>8.4</td></tr>
+            <tr><td>Sunil Narine</td><td>3</td><td>1</td><td>33</td><td>33</td><td>6.6</td></tr>
+            <tr><td>Varun Chakravarthy</td><td>2</td><td>0</td><td>25</td><td>-</td><td>8.3</td></tr>
+            <tr><td>Harshit Rana</td><td>1</td><td>0</td><td>12</td><td>-</td><td>9.6</td></tr>
+        </table>
+    </div>
+
+    <div class="container">
+
+        <h2>Bowler Stats Against Liam Livingstone</h2>
+        <table>
+            <tr>
+                <th>Bowler</th><th>Matches</th><th>Dismissals</th><th>Runs</th><th>Average</th><th>Economy</th>
+            </tr>
+            <tr><td>Andre Russell</td><td>2</td><td>1</td><td>38</td><td>38</td><td>11.75</td></tr>
+            <tr><td>Sunil Narine</td><td>1</td><td>1</td><td>17</td><td>17</td><td>8.5</td></tr>
+            <tr><td>Varun Chakravarthy</td><td>2</td><td>0</td><td>42</td><td>-</td><td>9.1</td></tr>
+            <tr><td>Harshit Rana</td><td>2</td><td>2</td><td>41</td><td>20.5</td><td>10.25</td></tr>
+        </table>
+    </div>
+
+    <div class="container">
+
+        <h2>Bowler Stats Against Krunal Pandya</h2>
+    <table>
+        <tr>
+            <th>Bowler</th><th>Matches</th><th>Dismissals</th><th>Runs</th><th>Average</th><th>Economy</th>
+        </tr>
+        <tr><td>Andre Russell</td><td>5</td><td>2</td><td>61</td><td>30.5</td><td>8.62</td></tr>
+        <tr><td>Sunil Narine</td><td>7</td><td>3</td><td>73</td><td>24.33</td><td>6.83</td></tr>
+        <tr><td>Varun Chakravarthy</td><td>3</td><td>1</td><td>41</td><td>41</td><td>8.2</td></tr>
+        <tr><td>Harshit Rana</td><td>1</td><td>0</td><td>15</td><td>-</td><td>9.4</td></tr>
+    </table>
+    </div>
+
+
+
+    <div class="container">
+
+        <h2>Bowler Stats Against Quinton de Kock</h2>
+        <table>
+            <tr>
+                <th>Bowler</th><th>Matches</th><th>Dismissals</th><th>Runs</th><th>Average</th><th>Economy</th>
+            </tr>
+            <tr><td>Bhuvneshwar Kumar</td><td>6</td><td>2</td><td>84</td><td>42</td><td>7.64</td></tr>
+            <tr><td>Yash Dayal</td><td>2</td><td>1</td><td>35</td><td>35</td><td>8.75</td></tr>
+            <tr><td>Krunal Pandya</td><td>4</td><td>1</td><td>61</td><td>61</td><td>7.69</td></tr>
+            <tr><td>Josh Hazlewood</td><td>3</td><td>1</td><td>46</td><td>46</td><td>7.67</td></tr>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById("mobile-menu").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
